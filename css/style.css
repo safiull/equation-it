@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Roboto:ital,wght@0,700;1,900&display=swap');
+
+body {
+    line-height: 1.6;
+}
+
+
+/* 
+#####################################
+######### Banner part css #########
+#####################################  
+*/
+
+#banner-part {
+    /* background-image: linear-gradient(to right, #222263, #258a40); */
+    background-image: url(../img/support1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 610px;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+    height: 610px;
+}
+
+.nav-overlay {
+    background: rgba(0, 0, 0, 0);
+    height: 100px;
+}
+
+.logo {
+    width: 250px;
+}
+
+nav {
+    font-family: 'Roboto', sans-serif;
+}
+
+.menubar a{
+    font-size: 11px;
+}
+
+
+/* 
+#####################################
+######### pos part css #########
+#####################################  
+*/
+
+.list-circle {
+    height: 16px;
+    width: 16px;
+    background: #9d80bc;
+    border: 5px solid #d5cde0;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+}
+
+#pos-part ul li {
+    list-style-type: none;
+}
+
+.pos-inner-title {
+    font-weight: 700;
+}
+
+.pos-part-img img {
+    height: 350px;
+}
+
+.pos-second-img {
+    height: 350px;
+}
+
+
+/* 
+#####################################
+######### type of pos part ##########
+#####################################  
+*/
+
+
+.card-img img {
+    max-width: 110px;
+    max-height: 90px;
+    margin: 0px auto;
+    padding-top: 14px;
+}
+
+.card-bg {
+    background-color: #e2f7fe;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 215px;
+    margin-bottom: 24px;
+    padding-top: 30px;
+    transition: all .5s ease;
+}
+
+.card-bg:hover {
+    -moz-box-shadow: 0px 0px 20px 3px #b3b3b3;
+    -webkit-box-shadow: 0px 0px 20px 3px #b3b3b3;
+    box-shadow: 0px 0px 20px 3px #b3b3b3;
+} 
+
+#type-of-pos a {
+    text-decoration: none;
+}
+
+.card-bg h5 {
+    margin-top: 15px;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+/* 
+#####################################
+######### price table part ##########
+#####################################  
+*/
+
+.price {
+    font-size: 40px;
+}
+
+.contact-btn {
+    padding: 10px 15pxs;
+}
+
+.span-block span{
+    display: block;
+    color: #567;
+}
+
+.featured h5, h4 {
+    color: #567;
+}
+
+#pricing-table .price-card-bg{
+    background-color: #fff;
+    border: none;
+}
+#pricing-table .featured {
+    transition: all .5s ease;
+    box-shadow: 0 1rem 1rem -0.5rem rgba(20,30,40,.1);
+}
+#pricing-table .featured:hover {
+    -webkit-transform: translateY(-1rem) scale(1.05);
+    -ms-transform: translateY(-1rem) scale(1.05);
+    transform: translateY(-1rem) scale(1.05);
+    box-shadow: 0 2rem 2rem -0.5rem rgba(20,30,40,.1);
+}
+
+.middle-card span{
+    font-size: 17px;
+}
+
+
+    /* 
+    #####################################
+    ############ support section ########
+    ##################################### 
+    */
+
+#support-section {
+    background-image: url(../img/support1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 550px;
+    color: #fff;
+}
+
+.support-part-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    height: 550px;
+}
+
+#support-section h2{
+    font-size: 40px;
+}
+
+#support-section h1{
+    font-size: 100px;
+}
+
+#support-section p{
+    font-size: 20px;
+}
+
+    /* 
+    #####################################
+    ###### documentation section ########
+    #####################################  
+    */
+
+    #documentation-section a{
+        color: #000;
+        text-decoration: none;
+    }
+
+    /* 
+    #####################################
+    ############ media query ############
+    ##################################### 
+    */
+
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+        .card-img img {
+            max-width: 96px;
+            max-height: 71px;
+            padding-top: 0px;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .pos-part-img img {
+            height: 250px;
+        }
+        .pos-second-img {
+            height: 250px;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .logo {
+            width: 200px;
+        }
+    }
+
+    @media screen and (max-width: 1200px) and (min-width: 768px) {
+        .price {
+            font-size: 25px;
+        }
+    }
