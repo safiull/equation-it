@@ -1,6 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Rubik:wght@500;600;700&display=swap');
 
-body {
-    line-height: 1.6;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rubik', sans-serif;
+}
+
+p, span, li {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 35px;
+}
+h3 {
+    font-size: 27px;
 }
 
 /* 
@@ -10,10 +28,19 @@ body {
 */
 
 #header ul li a{
-    color: rgba(0, 0, 0, 0.7) !important;
+    color: rgba(0, 0, 0, 0.8) !important;
+}
+#header .btn {
+    color: #fff !important;
 }
 #header {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+    box-shadow: none;
+}
+
+#header.active {
+    -moz-box-shadow: 0 8px 11px -6px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 8px 11px -6px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 11px -6px rgba(0,0,0,0.1);
 }
 
 
@@ -133,9 +160,9 @@ nav {
 
 .card-bg h5 {
     margin-top: 15px;
-    color: #000;
+    color: rgba(20,30,40,.8);
     text-transform: uppercase;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 /* 
@@ -150,7 +177,7 @@ nav {
 }
 
 .price {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .contact-btn {
@@ -162,7 +189,7 @@ nav {
     color: #567;
 }
 
-.featured h5, h4 {
+.featured h5, h3, h4 {
     color: #567;
 }
 
@@ -274,14 +301,21 @@ nav {
         }
     }
 
+    @media screen and (max-width: 1200px) and (min-width: 768px) {
+        .price {
+            font-size: 25px;
+        }
+    }
+
     @media screen and (max-width: 400px) {
         .logo {
             width: 200px;
         }
     }
 
-    @media screen and (max-width: 1200px) and (min-width: 768px) {
-        .price {
-            font-size: 25px;
+    @media screen and (max-width: 350px) {
+        .logo {
+            width: 200px;
         }
     }
+
